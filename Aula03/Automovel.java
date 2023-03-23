@@ -10,23 +10,23 @@ public class Automovel {
     }
 
     double imposto(double porcentual) {
-        if (porcentual >= 12) {
-            return this.valorFabrica * 0.12;
-        } else {
-            return this.valorFabrica * 0.15;
-        }
+        return valorFabrica * (porcentual / 100);
     }
 
-    /*
-     * double porcentagemDistribuidor(double percentual){
-     * 
-     * }
-     */
+    double porcentagemDistribuidor(double percentualDistribuidor, double percentual) {
+        return (valorFabrica + imposto(percentual)) * (percentualDistribuidor / 100);
+    }
 
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return "Nome :" + this.modelo;
+    double valorVeiculo() {
+        return this.valorFabrica = imposto(12) + porcentagemDistribuidor(8);
+    }
+
+    String dados() {
+        return "Modelo: " + modelo +
+                "\n" + "Valor fábrica: " + String.format("%.2f", valorFabrica) +
+                "\n" + "Imposto: R$" + String.format("%.2f", imposto(percentual)) +
+                "\nDistribuidor: R$"
+                + String.format("%.2f", porcentagemDistribuidor(percentualDistribuidor, percentual));
     }
 
 }
