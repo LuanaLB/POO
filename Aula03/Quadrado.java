@@ -16,4 +16,10 @@ public class Quadrado {
     double perimetro() {
         return lado * 4;
     }
+
+    String dados() {
+        return "A area do quadrado: " + area() +
+                "\nO perimetro do quadrado: " + perimetro() +
+                "\n*******************************";
+    }
 }

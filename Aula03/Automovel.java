@@ -18,15 +18,14 @@ public class Automovel {
     }
 
     double valorVeiculo() {
-        return this.valorFabrica = imposto(12) + porcentagemDistribuidor(8);
+        return valorFabrica = (imposto(3) + porcentagemDistribuidor(valorFabrica, valorFabrica));
     }
 
-    String dados() {
+    String dadosAutomo() {
         return "Modelo: " + modelo +
                 "\n" + "Valor fábrica: " + String.format("%.2f", valorFabrica) +
-                "\n" + "Imposto: R$" + String.format("%.2f", imposto(percentual)) +
-                "\nDistribuidor: R$"
-                + String.format("%.2f", porcentagemDistribuidor(percentualDistribuidor, percentual));
+                "\n" + "Imposto: R$" + String.format("%.2f", imposto(3)) +
+                "\nDistribuidor: R$" + String.format("%.2f", porcentagemDistribuidor(5, 3));
     }
-
+    // 12 8
 }

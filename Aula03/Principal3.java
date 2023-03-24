@@ -8,18 +8,21 @@ public class Principal3 {
          * Retangulo retangulo = new Retangulo(8, 8);
          * Circulo circulo = new Circulo(16);
          * 
-         * System.out.println();
+         * System.out.println(quadrado.dados() +
+         * "\n" + retangulo.dados() +
+         * "\n" + circulo.dados() +
+         * "\n ------------------------");
          */
 
-        // automove
+        // automovel
+
         double percentual = 3;
         double percentualDistribuidor = 5;
 
-        Automovel automovel1 = new Automovel();
-        automovel1.modelo = "Honda city";
-        automovel1.valorFabrica = 132200;
-
-        System.out.println(automovel1.dados(percentual, percentualDistribuidor));
+        Automovel automovel01 = new Automovel("Honda city", 132200);
+        System.out.println(automovel01.dadosAutomo());
+        // System.out.println(automovel01.dadosAutomo(percentual,
+        // percentualDistribuidor));
 
     }
 }

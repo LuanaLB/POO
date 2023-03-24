@@ -16,4 +16,10 @@ public class Retangulo {
     double perimetro() {
         return (altura * 2) + (lado * 2);
     }
+
+    String dados() {
+        return "A area do retangulo: " + area() +
+                "\n" + "O perimetro de retangulo: " + perimetro() +
+                "\n*******************************";
+    }
 }
