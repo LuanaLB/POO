@@ -12,7 +12,7 @@ public class Venda {
     }
 
     double total(){
-        return
+        return 
     }
 
     String dados() {
