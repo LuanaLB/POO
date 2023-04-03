@@ -11,9 +11,11 @@ public class Venda {
         this.item = item;
     }
 
-    double total(){
-        return 
-    }
+    /*
+     * double total(){
+     * return
+     * }
+     */
 
     String dados() {
         return item.dados() +
