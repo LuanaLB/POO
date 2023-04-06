@@ -12,10 +12,12 @@ public class Pessoa1 {
         this.dataNascimento = dataNascimento;
     }
 
-    int idade() {
-        Period idade = dataNascimento.until(LocalDate.now());
-        return idade.getYears();
-    }
+    /*
+     * int idade() {
+     * Period idade = dataNascimento.until(LocalDate.now());
+     * return idade.getYears();
+     * }
+     */
 
     String dados() {
         return "\nPessoa: " + nome +

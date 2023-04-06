@@ -9,12 +9,13 @@ public class Item {
         this.produto = produto;
     }
 
-    double total(){
-        return
+    double total() {
+        return quantidade * produto.valor;
     }
 
     String dados() {
         return produto.dados() +
-                "\nQuantidade: " + quantidade;
+                "\nQuantidade: " + quantidade +
+                "\nTotal: " + total();
     }
 }
