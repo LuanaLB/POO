@@ -11,7 +11,6 @@ public class Principal2 {
         Emprestimo emprestimo = new Emprestimo(cliente, 1000.00, 10, 10);
 
         emprestimo.aprovaçao();
-        System.out.printf("valor total pago: %.2f %n", (emprestimo.valorTotal()));
-        System.out.printf("valor das parcelas: %.2f %n", (emprestimo.valorParcelas()));
+        emprestimo.mostrarEmTela();
     }
 }

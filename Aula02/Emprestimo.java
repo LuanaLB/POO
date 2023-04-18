@@ -26,6 +26,14 @@ public class Emprestimo {
 
     }
 
+    String imprimirParcelas() {
+        String texto = "";
+        for (int i = 0; i < numParcelas; i++) {
+            texto += (i + 1) + " parcela: R$" + valorParcelas() + "\n";
+        }
+        return texto;
+    }
+
     double valorTotal() {
         double valorTotal = valorEmprestimo / numParcelas;
         double valorSomado = 0;
@@ -44,7 +52,7 @@ public class Emprestimo {
 
         emprestimo.aprovaçao();
         emprestimo.valorParcelas();
-        System.out.println("Valor total já pago: %.2f " + emprestimo.valorTotal());
+        System.out.println("Valor total já pago: %.2f " + emprestimo.valorTotal() + "\n" + imprimirParcelas());
     }
 
 }

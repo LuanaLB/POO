@@ -1,9 +1,9 @@
 package Aula04;
 
 public class Estado {
-    Cidade cidade;
     String nomeEstado;
     String sigla;
+    Cidade cidade;
 
     public Estado(String nomeEstado, String sigla, Cidade cidade) {
         this.nomeEstado = nomeEstado;
