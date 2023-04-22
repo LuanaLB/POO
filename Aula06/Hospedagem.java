@@ -11,11 +11,11 @@ public class Hospedagem {
         this.dataCheckout = dataCheckout;
     }
 
+    int quantidadeDiarias() {
+        int dias = Days.daysBetween(dataCheckin, dataCheckout).getDays();
+    }
+
     /*
-     * int quantidadeDiarias(){
-     * 
-     * }
-     * 
      * double total(){
      * 
      * }

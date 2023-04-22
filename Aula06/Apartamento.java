@@ -11,12 +11,6 @@ public class Apartamento {
         this.tipoApartam = tipoApartam;
     }
 
-    /*
-     * double valorDaDiaria(){
-     * 
-     * }
-     */
-
     String dados() {
         return "\nNumero do Apart.: " + numero
                 + "Valor diaria: " + valorDiaria
