@@ -11,7 +11,6 @@ public class Venda {
     LocalDateTime data;
 
     public Venda(LocalDateTime data) {
-
         this.data = data;
     }
 
