@@ -9,7 +9,7 @@ public class Acompanhante {
         this.cpfAcom = cpfAcom;
     }
 
-    String dados() {
+    String dadosAcomp() {
         return "\nNome do Acompanhante: " + nomeAcom
                 + " CPF: " + cpfAcom;
     }

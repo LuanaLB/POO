@@ -12,8 +12,8 @@ public class Apartamento {
     }
 
     String dados() {
-        return "\nNumero do Apart.: " + numero
-                + "Valor diaria: " + valorDiaria
-                + "Tipo do Apart.: " + tipoApartam;
+        return "\nNumero do Apartamento: " + numero
+                + "     Valor diaria: " + valorDiaria
+                + "     Tipo do Apart.: " + tipoApartam;
     }
 }
