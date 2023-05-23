@@ -2,12 +2,20 @@ package Aula08;
 
 public class Principal08 {
     public static void main(String[] args) {
-        Estagiario estagiaorio = new Estagiario("Nutrição");
+        Estagiario estag = new Estagiario(
+                "Lucas",
+                1250,
+                "Nutrição");
 
-        Gerente gerente = new Gerente(800.00);
+        Gerente geren = new Gerente(
+                "Cláudio",
+                6000,
+                500);
+        imprimir(estag);
 
-        Departamento departamento = new Departamento("Adminstração", "998877555");
+    }
 
-        Empresa empresa = new Empresa("Não sei", "332211665544");
+    private static void imprimir(Funcionario funcionario) {
+        System.out.println(funcionario.dados());
     }
 }

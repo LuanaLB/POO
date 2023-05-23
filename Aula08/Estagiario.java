@@ -10,6 +10,7 @@ public class Estagiario extends Funcionario {
 
     @Override
     String dados() {
-        return "\nCurso: " + curso;
+        return "\nCurso: " + curso
+                + super.dados();
     }
 }

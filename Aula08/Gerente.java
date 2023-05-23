@@ -10,6 +10,7 @@ public class Gerente extends Funcionario {
 
     @Override
     String dados() {
-        return "\nGerente com gratificacao de: " + gratificacao;
+        return "\nGerente com gratificacao de: " + gratificacao
+                + super.dados();
     }
 }
