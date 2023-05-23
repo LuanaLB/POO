@@ -1,9 +1,10 @@
 public class Cliente {
-    private String nome, cpf;
+    private String nome;
+    private String cpf;
 
     public Cliente(String nome, String cpf) {
         this.nome = nome;
-        cpf = cpf;
+        this.cpf = cpf;
     }
 
     public String getNome() {
