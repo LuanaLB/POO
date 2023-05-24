@@ -11,7 +11,7 @@ public class Principal08 {
                 "Cláudio",
                 6000,
                 500);
-        imprimir(estag);
+        imprimir(geren);
 
     }
 
