@@ -9,6 +9,10 @@ public class Departamento {
         this.telefone = telefone;
     }
 
+    String funcionarios() {
+        return "Departamento: " + nome + "\nTelefone: " + telefone;
+    }
+
     String dados() {
         return "\nNome do departamento: " + nome
                 + "\nTefone: " + telefone;

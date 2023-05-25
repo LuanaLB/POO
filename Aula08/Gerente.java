@@ -8,9 +8,14 @@ public class Gerente extends Funcionario {
         this.gratificacao = gratificacao;
     }
 
+    public double totalSalario() {
+        return super.salario + gratificacao;
+    }
+
     @Override
     String dados() {
-        return "\nGerente com gratificacao de: " + gratificacao
-                + super.dados();
+        return super.dados() +
+                "\nGratificacao gerente: " + gratificacao;
+
     }
 }

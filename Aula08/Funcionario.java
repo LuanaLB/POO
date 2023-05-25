@@ -11,6 +11,6 @@ public abstract class Funcionario {
 
     String dados() {
         return "\nNome do funcionario: " + nome
-                + " Salario: " + salario;
+                + "\nSalario: " + salario;
     }
 }
