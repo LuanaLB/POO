@@ -13,4 +13,11 @@ public abstract class Funcionario {
         return "\nNome do funcionario: " + nome
                 + "\nSalario: " + salario;
     }
+
+    public void add(Gerente gerente) {
+    }
+
+    public void add(Estagiario estagiario) {
+
+    }
 }
