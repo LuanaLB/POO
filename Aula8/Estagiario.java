@@ -1,5 +1,3 @@
-package Aula08;
-
 public class Estagiario extends Funcionario {
     public String curso;
 
@@ -8,7 +6,6 @@ public class Estagiario extends Funcionario {
         this.curso = curso;
     }
 
-    @Override
     String dados() {
         return super.dados()
                 + "\nCurso: " + curso;

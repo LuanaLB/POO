@@ -6,17 +6,21 @@ public class Venda {
     private Concessionaria concessionaria;
     private Cliente cliente;
 
-    public boolean verificarEstoque() {
-        if (veiculos.modelo == veiculos.modelo) {
-            return true;
-        } else
-            return false;
-    }
+    /*
+     * public boolean verificarEstoque() {
+     * if (veiculos.modelo == veiculos.modelo) {
+     * return true;
+     * } else
+     * return false;
+     * }
+     */
 
-    public void venda() {
-        verificarEstoque();
-        double valorTotal = veiculos.preco;
-    }
+    /*
+     * public void venda() {
+     * verificarEstoque();
+     * double valorTotal = veiculos.preco;
+     * }
+     */
 
     public String dadosVenda() {
         return "\n Dados da concessionária: \n" +

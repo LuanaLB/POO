@@ -1,40 +1,42 @@
 package Aula06;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Hospedagem {
-    Acompanhante acompanhante;
     List<Item01> itens = new ArrayList<Item01>();
+    List<Acompanhante> acompanhantes = new ArrayList<Acompanhante>();
     LocalDateTime dataCheckin;
     LocalDateTime dataCheckout;
+    Apartamento apartamento;
+    Hospede hospede;
+    Acompanhante acompanhante;
 
-    public Hospedagem(LocalDateTime dataCheckin, LocalDateTime dataCheckout) {
-        this.dataCheckin = dataCheckin;
-        this.dataCheckout = dataCheckout;
+    public Hospedagem(Hospede hospede, Apartamento apartamento) {
+        this.hospede = hospede;
+        this.apartamento = apartamento;
+        this.dataCheckin = LocalDateTime.now();
     }
 
-    /*
-     * int quantidadeDiarias(int diaria) {
-     * for (int diaria = 0; * dataCheckout) {
-     * diaria =
-     * }
-     * }
-     */
+    int quantidadeDiarias(int diaria) {
+        return (int) ChronoUnit.DAYS.between(dataCheckout, dataCheckin);
+    }
 
-    double total() {
-        double total = 0;
-        for (Item01 a : itens) {
-            total += a.total();
-        }
-        return total;
+    public double total() {
+        double valorItens = itens.stream().mapToDouble(Item01::total).sum();
+        return (quantidadeDiarias(0) * apartamento.valorDiaria) + valorItens;
     }
 
     String dados() {
         return "Data do Checkin: " + dataCheckin
                 + "Data Checkout: " + dataCheckout +
                 "Acompanhamte: " + acompanhante;
+    }
+
+    public void dataCheckout(LocalDateTime parse) {
     }
 }
 
