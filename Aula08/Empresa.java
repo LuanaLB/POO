@@ -1,3 +1,5 @@
+package Aula08;
+
 import java.util.ArrayList;
 
 public class Empresa {
@@ -12,15 +14,15 @@ public class Empresa {
 
     String dados() {
         return "\nRazão Social: " + razaoSocial
-             + "\nCNPJ: " + cnpj +
-               "\n" + departamentos();
+                + "\nCNPJ: " + cnpj +
+                "\n" + departamentos();
     }
 
     String departamentos() {
-        String listDepart="";
-        for( Departamento d : departamentos) {
+        String listDepart = "";
+        for (Departamento d : departamentos) {
             listDepart += "\nDepartamentos: " + d.dados() + "\n";
-        } 
+        }
         return listDepart;
     }
 }

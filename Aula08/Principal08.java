@@ -1,3 +1,5 @@
+package Aula08;
+
 public class Principal08 {
     public static void main(String[] args) {
 
@@ -13,7 +15,7 @@ public class Principal08 {
         Estagiario estagiario1 = new Estagiario("Juliana", 800, "Nutrição");
         Estagiario estagiario2 = new Estagiario("Luana", 500, "TI");
 
-        //departamento01.funcionarios.add(gerente01);
+        // departamento01.funcionarios.add(gerente01);
         departamento1.funcionarios.add(estagiario1);
         departamento2.funcionarios.add(estagiario2);
 
@@ -21,7 +23,6 @@ public class Principal08 {
         empresa.departamentos.add(departamento1);
 
         System.out.println(departamento1.funcionarios());
-
 
     }
 }

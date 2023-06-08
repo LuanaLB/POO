@@ -1,3 +1,5 @@
+package Aula08;
+
 public class Estagiario extends Funcionario {
     public String curso;
 

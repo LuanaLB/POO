@@ -1,3 +1,4 @@
+package Aula08;
 
 import java.util.ArrayList;
 
@@ -13,10 +14,11 @@ public class Departamento {
         this.gerente = gerente;
     }
 
-    //laço de repetição para imprimir a lista de funcionarios(incluindo funcionarios, gerentes, estagiarios)
+    // laço de repetição para imprimir a lista de funcionarios(incluindo
+    // funcionarios, gerentes, estagiarios)
     String funcionarios() {
-        String listFunc="";
-        for(Funcionario f : funcionarios){
+        String listFunc = "";
+        for (Funcionario f : funcionarios) {
             listFunc += "\nFuncionarios: " + f.dados() + "\n";
         }
         return listFunc;

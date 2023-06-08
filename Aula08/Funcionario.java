@@ -1,4 +1,6 @@
-public class Funcionario{
+package Aula08;
+
+public class Funcionario {
     public String nome;
     public double salario;
 
