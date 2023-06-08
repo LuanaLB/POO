@@ -3,8 +3,8 @@ package Aula09;
 public class Principal09 {
     public static void main(String[] args) {
 
-        Funcionario01 Funcionario1 = new Funcionario01("Paulo", 1500);
-        Funcionario01 Funcionario2 = new Funcionario01("Maria", 1500);
+        Funcionario01 funcionario1 = new Funcionario01("Paulo", 1500);
+        Funcionario01 funcionario2 = new Funcionario01("Maria", 1500);
 
         Estagiario01 estagiario1 = new Estagiario01("Juliana", 800, "Nutrição");
         Estagiario01 estagiario2 = new Estagiario01("Luana", 500, "TI");
@@ -15,7 +15,9 @@ public class Principal09 {
         Departamento01 departamento2 = new Departamento01("Administrativo", "5544-6688", gerente2);
         Departamento01 departamento1 = new Departamento01("Administrativo", "5544-6688", gerente1);
 
-        departamento1.getFuncionarios().add(estagiario1);
+        departamento1.getFuncionarios().add(funcionario1);
+        departamento1.getFuncionarios().add(funcionario2);
+        departamento2.getFuncionarios().add(estagiario1);
         departamento2.getFuncionarios().add(estagiario2);
 
         Empresa01 empresa = new Empresa01("TI.Tecnologia", "221133");
